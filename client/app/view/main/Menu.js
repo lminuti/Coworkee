@@ -25,6 +25,7 @@ Ext.define('App.view.main.Menu', {
             scrollable: 'y',
             store: 'Menu',
             weight: 0,
+            height: 0,
             flex: 1,
             ui: 'dark large',
             selectable: {
