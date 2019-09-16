@@ -106,7 +106,7 @@ Ext.define('App.view.widgets.Wizard', {
     width: 512,
 
     bind: {
-        iconCls: 'x-fa fa-{record.phantom? "plus" : "pencil"}'
+        iconCls: 'x-fa fa-{record.phantom? "plus" : "pencil-alt"}'
     },
 
     items: [{

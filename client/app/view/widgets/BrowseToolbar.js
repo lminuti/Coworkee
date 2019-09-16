@@ -20,7 +20,7 @@ Ext.define('App.view.widgets.BrowseToolbar', {
             weight: 0
         },
         refresh: {
-            iconCls: 'x-fa fa-refresh',
+            iconCls: 'x-fa fa-sync',
             handler: 'onRefreshTap',
             tooltip: 'Refresh',
             weight: 30

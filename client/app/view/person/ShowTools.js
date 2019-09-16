@@ -38,21 +38,21 @@ Ext.define('App.view.person.ShowTools', {
                 tooltip: 'Call <b>{record.phone}</b>'
             }
         },{
-            iconCls: 'x-fa fa-skype',
+            iconCls: 'x-fab fa-skype',
             handler: 'onSkypeTap',
             ui: 'action-skype',
             bind: {
                 tooltip: 'Skype with <b>{record.skype}</b>'
             }
         },{
-            iconCls: 'x-fa fa-envelope',
+            iconCls: 'x-fa fa-envelope-open',
             handler: 'onEmailTap',
             ui: 'action-email',
             bind: {
                 tooltip: 'Send email to <b>{record.email}</b>'
             }
         },{
-            iconCls: 'x-fa fa-linkedin',
+            iconCls: 'x-fab fa-linkedin',
             handler: 'onLinkedInTap',
             ui: 'action-linkedin',
             bind: {

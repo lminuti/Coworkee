@@ -93,7 +93,7 @@ Ext.define('App.view.tablet.person.Browse', {
                 encodeHtml: false
             },
             tpl: [
-                '<div class="item-info"><span class="x-fa fa-envelope-o"></span> {email}</div>',
+                '<div class="item-info"><span class="x-fa fa-envelope-open"></span> {email}</div>',
                 '<div class="item-info"><span class="x-fa fa-phone"></span> {phone}</div>'
             ]
         }],

@@ -37,12 +37,15 @@ Ext.define('App.overrides.util.Format', {
     },
 
     actionIconCls: function(type) {
+        let prefix = 'x-fa';
         switch (type) {
         case 'profile': type = 'user'; break;
         case 'email': type = 'envelope'; break;
+        case 'skype': prefix = 'x-fab'; break;
+        case 'linkedin': prefix = 'x-fab'; break;
         default:
         }
 
-        return 'x-fa fa-' + type;
+        return prefix + ' fa-' + type;
     }
 });
