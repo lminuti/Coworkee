@@ -6,26 +6,31 @@ Ext.define('App.store.Menu', {
         id: 'home',
         xtype: 'home',
         text: 'Home',
-        icon: 'home'
+        icon: 'x-fa fa-home'
     }, {
         id: 'people',
         xtype: 'personbrowse',
         text: 'Employees',
-        icon: 'users'
+        icon: 'x-fa fa-users'
     }, {
         id: 'organizations',
         xtype: 'organizationbrowse',
         text: 'Organizations',
-        icon: 'sitemap'
+        icon: 'x-fa fa-sitemap'
     }, {
         id: 'offices',
         xtype: 'officebrowse',
         text: 'Offices',
-        icon: 'globe'
+        icon: 'x-fa fa-globe'
     }, {
         id: 'history',
         xtype: 'historybrowse',
         text: 'Activity',
-        icon: 'history'
+        icon: 'x-fa fa-history'
+    }, {
+        id: 'treetest',
+        xtype: 'treetest',
+        text: 'Tree test',
+        icon: 'x-fas fa-tree'
     }]
 });

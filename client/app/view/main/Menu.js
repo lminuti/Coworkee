@@ -2,6 +2,11 @@ Ext.define('App.view.main.Menu', {
     extend: 'App.view.widgets.Sidebar',
     xtype: 'mainmenu',
 
+    requires: [
+        'Ext.list.Tree',
+        'Ext.data.TreeStore'
+    ],
+
     config: {
         selection: null
     },
@@ -32,7 +37,7 @@ Ext.define('App.view.main.Menu', {
                 deselectable: false
             },
             itemTpl: [
-                '<span class="icon x-fa fa-{icon}"></span>',
+                '<span class="icon {icon}"></span>',
                 '<span class="text">{text}</span>'
             ],
             listeners: {

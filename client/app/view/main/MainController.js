@@ -7,7 +7,7 @@ Ext.define('App.view.main.MainController', {
             action: 'handleNavigationRoute',
             conditions: {
                 // NOTE(SB): how to build this list automatically from the Menu store?
-                ':type': '(history|home|offices|organizations|people)',
+                ':type': '(history|home|offices|organizations|people|treetest)',
                 ':args': '(.*)'
             }
         },
