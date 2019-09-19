@@ -10,33 +10,58 @@ Ext.define('App.view.main.TestTree', {
     items: {
 
         xtype: 'treelist',
-        id: 'test',
+        expanderOnly: false,
         store: {
             root: {
-                id: 'root',
                 expanded: true,
                 text: 'root',
                 children: [{
-                    text: 'detention',
-                    leaf: true,
-                    iconCls: 'x-fa fa-frown-o'
-                }, {
-                    text: 'homework',
+                    text: 'Organization',
                     expanded: true,
-                    iconCls: 'x-fa fa-folder',
+                    iconCls: 'x-fa fa-sitemap',
                     children: [{
-                        text: 'book report',
+                        text: 'Customer service',
                         leaf: true,
-                        iconCls: 'x-fa fa-book'
+                        iconCls: 'x-fa fa-square'
                     }, {
-                        text: 'algebra',
+                        text: 'Enginering',
                         leaf: true,
-                        iconCls: 'x-fa fa-graduation-cap'
+                        iconCls: 'x-fa fa-square'
                     }]
                 }, {
-                    text: 'buy lottery tickets',
-                    leaf: true,
-                    iconCls: 'x-fa fa-usd'
+                    text: 'Offices',
+                    expanded: true,
+                    iconCls: 'x-fa fa-globe',
+                    children: [{
+                        text: 'Dottie',
+                        leaf: true,
+                        iconCls: 'x-fa fa-building'
+                    }, {
+                        text: 'Dryen',
+                        leaf: true,
+                        iconCls: 'x-fa fa-building'
+                    }, {
+                        text: 'Fairfield',
+                        leaf: true,
+                        iconCls: 'x-fa fa-building'
+                    }]
+                }, {
+                    text: 'Employees',
+                    expanded: true,
+                    iconCls: 'x-fa fa-users',
+                    children: [{
+                        text: 'Philip Harper',
+                        leaf: true,
+                        iconCls: 'x-fa fa-user'
+                    }, {
+                        text: 'Doris Guterrez',
+                        leaf: true,
+                        iconCls: 'x-fa fa-user'
+                    }, {
+                        text: 'Stephanie Gomez',
+                        leaf: true,
+                        iconCls: 'x-fa fa-user'
+                    }]
                 }]
             }
 
