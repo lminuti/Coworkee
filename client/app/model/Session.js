@@ -1,5 +1,5 @@
 Ext.define('App.model.Session', {
-    extend: 'Ext.data.Model',
+    extend: 'App.model.Base',
 
     fields: [
         { name: 'token', type: 'string' },

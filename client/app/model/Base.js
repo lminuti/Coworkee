@@ -22,7 +22,9 @@ Ext.define('App.model.Base', {
         // Setting the models namespace to produce proper association getter names.
         // http://docs.sencha.com/extjs/latest/modern/Ext.data.schema.Schema.html#ext-data-schema-schema_relative-naming
         namespace: 'App.model',
-
+        // Using an id so that the schema is not a default schema but is used
+        // only by inherited models
+        id: 'coworkee',
         proxy: {
             type: 'direct',
             api: {
