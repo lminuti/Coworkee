@@ -11,23 +11,7 @@ pipelines:
         caches:
           - sencha
         script:
-          - pushd ~/download
-          - ls -l
-          # Download and extract SDK
-          - test -e extjs-7.0.0-small.zip || wget $SDK_URL 2>&1 | tail
-          - test -e extjs-7.0.0 || unzip extjs-7.0.0-small.zip | tail
-          - ls -l
-          # Download and install sencha command
-          - test -e SenchaCmd-7.0.0.40-linux-amd64.sh.zip || wget http://cdn.sencha.com/cmd/7.0.0.40/no-jre/SenchaCmd-7.0.0.40-linux-amd64.sh.zip 2>&1 | tail
-          - test -e SenchaCmd-7.0.0.40-linux-amd64.sh || unzip SenchaCmd-7.0.0.40-linux-amd64.sh.zip
-          - ./SenchaCmd-7.0.0.40-linux-amd64.sh -q
-          #
-          - popd
-          - cd client
-          # Prepare workspace
-          - ~/bin/Sencha/Cmd/7.0.0.40/sencha app install ~/download/ext-7.0.0
-          # Compile production release
-          - ~/bin/Sencha/Cmd/7.0.0.40/sencha app build production
+          - /bin/bash ./bitbucket-pipelines.sh
 definitions:
   caches:
     sencha: ~/download 
